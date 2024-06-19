@@ -1,4 +1,64 @@
-<!-- That's right... it's completely empty. Scary! Don't worry - that's what boilerplate is for! You DID read the directions all the way through, right? -->
-<!-- Remember to start by typing a single exclamation point (!) and then hitting enter or selecting the first dropdown option.-->
-<!-- This will give you the basic, necessary skeletal elements of a webpage so you can begin coding to our specific requirements! -->
-<!-- Good luck! You've got this! -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+  <form id="form__submit" action="form.php" method="post">
+    <form action="" method="get" class="form">
+        <form action="/action_page.php">
+            <label for="username">Please select your Username:</label>
+            <input type="text" id="username" name="username" required>
+            <input type="submit">
+          </form>
+          
+        </div>
+        <fieldset>
+            <legend>Choose your favorite fruit:</legend>
+          
+            <div>
+              <input type="checkbox" id="Apple" name="Apple" />
+              <label for="Apple">Apple</label>
+            </div>
+          
+            <div>
+              <input type="checkbox" id="Banana" name="Banana" />
+              <label for="Banana">Banana</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="Orange" name="Orange" />
+                <label for="Orange">Orange</label>
+              </div>
+          </fieldset>
+      </form>
+  <form method="post">
+    <fieldset>
+      <legend>Please select your gender</legend>
+      <label><input type="radio" name="radio" value="Male" /> Male</label>
+      <label><input type="radio" name="radio" value="Female" checked/> Female</label> 
+      <label><input type="radio" name="radio" value="Other" /> Other</label>
+    </fieldset>
+    <label for="Countries">Please select your country of origin:</label>
+<select name="Countries" id="Countries">     <option value="Countries">USA</option>
+    <option value="USA">USA</option>
+    <option value="CANADA">CANADA</option>
+    <option value="UK">UK</option>
+</select>
+  </form>
+  <b>Submit form details</b>
+      <a href="#" onclick="submitForm()"> <input type="submit" value="Submit" /></a>
+  </form>
+
+  <script>
+      function submitForm() {
+          let form = document.getElementById("form__submit");
+          form.submit();
+      }
+  </script>
+</body>
+</html>
